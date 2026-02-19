@@ -98,7 +98,6 @@ Final testing and integration were performed manually.
 - HTML  
 - CSS  
 - JavaScript  
-- Node.js / Python / PHP  
 - Local Storage / Database  
 
 ---
