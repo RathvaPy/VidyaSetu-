@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <title>VidyaSetu - Department Management System</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+  </head>
+  <body>
+    <div class="app-container" id="app">
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" onclick="toggleSidebar()">☰</button>
+
+      <!-- Sidebar Overlay -->
+      <div
+        class="sidebar-overlay"
+        id="sidebarOverlay"
+        onclick="toggleSidebar()"
+      ></div>
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <div class="logo-icon">🎓</div>
+            <span>VidyaSetu</span>
+          </div>
+          <div class="sidebar-user" id="userInfo">
+            <strong><span id="sidebarUserName">Admin</span></strong>
+            <div style="font-size: 0.75rem; opacity: 0.8">Administrator</div>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-section">
+            <div class="nav-section-title">Main</div>
+            <div class="nav-item active" onclick="navigateTo('dashboard')">
+              <span class="nav-icon">📊</span>
+              <span>Dashboard</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('structure')">
+              <span class="nav-icon">🏛️</span>
+              <span>Department Structure</span>
+            </div>
+          </div>
+          <div class="nav-section">
+            <div class="nav-section-title">Management</div>
+            <div class="nav-item" onclick="navigateTo('students')">
+              <span class="nav-icon">👥</span>
+              <span>Students</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('faculty')">
+              <span class="nav-icon">👨‍🏫</span>
+              <span>Faculty</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('lectures')">
+              <span class="nav-icon">📅</span>
+              <span>Lecture Scheduler</span>
+            </div>
+          </div>
+          <div class="nav-section">
+            <div class="nav-section-title">Academic</div>
+            <div class="nav-item" onclick="navigateTo('attendance')">
+              <span class="nav-icon">✅</span>
+              <span>Attendance</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('marks')">
+              <span class="nav-icon">📝</span>
+              <span>Marks Entry</span>
+            </div>
+            <div class="nav-item" onclick="navigateTo('performance')">
+              <span class="nav-icon">📈</span>
+              <span>Performance</span>
+            </div>
+          </div>
+          <div class="nav-section">
+            <div class="nav-section-title">System</div>
+            <div class="nav-item" onclick="navigateTo('settings')">
+              <span class="nav-icon">⚙️</span>
+              <span>Settings</span>
+            </div>
+            <div class="nav-item" onclick="logout()">
+              <span class="nav-icon">🚪</span>
+              <span>Logout</span>
+            </div>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content" id="mainContent">
+        <!-- Content will be dynamically loaded here -->
+      </main>
+    </div>
+
+    <script src="/assets/scripts/script.js"></script>
+  </body>
+</html>
