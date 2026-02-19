@@ -10,6 +10,9 @@
 The system helps manage student records, faculty assignments, lecture scheduling, attendance tracking, marks entry, and performance analytics in a structured and scalable way.
 
 ---
+<img width="1101" height="532" alt="image" src="https://github.com/user-attachments/assets/c8895a53-4bf7-4b47-9d6c-a259cfd92b99" />
+
+
 
 ## 🏆 Hackathon Context
 
